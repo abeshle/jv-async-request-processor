@@ -21,7 +21,7 @@ public class AsyncRequestProcessor {
         return CompletableFuture.supplyAsync(() -> {
             simulateDelay();
 
-            UserData userData = new UserData(userId, "details=Details for " + userId);
+            UserData userData = new UserData(userId, "Details for " + userId);
             cache.put(userId, userData);
 
             return userData;
